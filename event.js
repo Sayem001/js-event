@@ -45,3 +45,16 @@ document.getElementById('update-btn').addEventListener('click',function(){
     document.getElementById('clicking-method').innerText=name.value;
     name.value=''
 })
+
+// post comment section 
+document.getElementById('comment-post').addEventListener('click',function(){
+    const commentInput=document.getElementById('comment-input')
+    // const commentText=commentInput.value;
+   
+    const newComment=document.createElement('p');
+    newComment.innerText=commentInput.value;
+
+    const commentContainer=document.getElementById('comment-container')
+    commentContainer.appendChild(newComment);
+    commentInput.value=''
+})
