@@ -58,3 +58,9 @@ document.getElementById('comment-post').addEventListener('click',function(){
     commentContainer.appendChild(newComment);
     commentInput.value=''
 })
+
+// delete text by typing delete for confoemation 
+
+document.getElementById('delete-btn').addEventListener('click',function(){
+    document.getElementById('secrate-text').style.display='none'
+})
