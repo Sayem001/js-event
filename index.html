@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS event</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>
-        event niye click baji
+      event niye click baji
     </h1>
 
     <!-- system number 1 -->
     <button onclick="document.body.style.backgroundColor='red'">
-        click me red
+      click me red
     </button>
 
     <!-- system number 2 external js function -->
     <button onclick="makeYellow()">click me yellow</button>
 
+    <!-- system 3 taking button by id  -->
+    <button id="make-blue-btn">click me blue</button>
+
+    <!-- system number 4 -->
+    <button id="make-green-btn">
+      click me green
+    </button>
+
+    <!-- system number 5 event listener -->
+    <button id="make-goldenRod-btn">
+      click me golden rod
+    </button>
+
+    
     <script src="event.js"></script>
-</body>
+  </body>
 </html>
