@@ -22,3 +22,26 @@ const goldenRodBtn=document.getElementById('make-goldenRod-btn');
 goldenRodBtn.addEventListener('click',function(){
     document.body.style.backgroundColor='goldenRod'
 })
+
+// in a single line usually done by pro developer
+document.getElementById('make-lightBlue-btn').addEventListener('click',function(){
+    document.body.style.backgroundColor='lightBlue';
+})
+
+// inner text added by function 
+function addInnerText(){
+    document.getElementById('clicking-method').innerText='inner text added by js function'
+}
+
+// inner text added  by direct  method 
+document.getElementById('direct').addEventListener('click',function(){
+    document.getElementById('clicking-method').innerText='inner text added by direct method'
+})
+
+// update name by input field 
+document.getElementById('update-btn').addEventListener('click',function(){
+    const name=document.getElementById('input-name')
+    // console.log(name.value)
+    document.getElementById('clicking-method').innerText=name.value;
+    name.value=''
+})
